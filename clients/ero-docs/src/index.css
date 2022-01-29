@@ -1,0 +1,12 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Glacial Indifference";
+  font-style: normal;
+  src: local("Glacial Indifference"),
+    url(./assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf)
+      format("truetype");
+}
