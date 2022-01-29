@@ -1,0 +1,57 @@
+{
+  "collection": "@nestjs/schematics",
+  "compilerOptions": {
+    "assets": ["assets/**/*"],
+    "tsConfigPath": "tsconfig.app.json"
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "monorepo": true,
+  "root": "apps/ero-graphics",
+  "projects": {
+    "ero-graphics": {
+      "type": "application",
+      "root": "apps/ero-graphics",
+      "entryFile": "main",
+      "sourceRoot": "apps/ero-graphics/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ero-graphics/tsconfig.app.json"
+      }
+    },
+    "ero-api": {
+      "type": "application",
+      "root": "apps/ero-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/ero-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ero-api/tsconfig.app.json"
+      }
+    },
+    "types": {
+      "type": "library",
+      "root": "libs/types",
+      "entryFile": "index",
+      "sourceRoot": "libs/types/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/types/tsconfig.lib.json"
+      }
+    },
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    },
+    "shared": {
+      "type": "library",
+      "root": "libs/shared",
+      "entryFile": "index",
+      "sourceRoot": "libs/shared/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/shared/tsconfig.lib.json"
+      }
+    }
+  }
+}

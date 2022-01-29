@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "lib": ["DOM", "ESNext"],
+    "outDir": "./dist/",
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@ero/types": ["libs/types/src"],
+      "@ero/types/*": ["libs/types/src/*"],
+      "@ero/core": ["libs/core/src"],
+      "@ero/core/*": ["libs/core/src/*"],
+      "@ero/shared": ["libs/shared/src"],
+      "@ero/shared/*": ["libs/shared/src/*"]
+    }
+  },
+  "include": ["apps", "libs"],
+  "exclude": ["node_modules"]
+}
