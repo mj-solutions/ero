@@ -1,6 +1,6 @@
 # Ero
 
-Ero is a web-scraper and notifier. Currently configured to scrape swedish electronics websites for graphics cards and notify when new products are in store.
+Ero is a web-scraper and notifier. It's currently configured to scrape swedish electronics retailers' websites for graphics cards and notify when certain products are in stock.
 
 ## Setup
 
@@ -22,7 +22,9 @@ How to run ero:
    - `TELEGRAM_BOT_API_KEY` // Bot key
    - `CHROMIUM_PATH` // Only if hosted on linux
    - `UPDATE_INTERVAL_MIN` // Interval for ero to scrape retailers (in minutes)
-2. Run `npm run start ero-graphics`
+2. Run `npm run start ero-graphics` to scrape
+3. Run `npm run start ero-api` to start the API server
+4. Run `npm run dev -r` to host the frontend locally
 
 ## Test
 
